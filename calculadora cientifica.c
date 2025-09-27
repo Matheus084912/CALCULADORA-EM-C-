@@ -6,11 +6,11 @@
 
 
     int main() {
-    double numero1, numero2, resultado;
+    double numero1, numero2, numero3, numero4, numero5, resultado;
     int op; 
     
     printf("BEM VINDOS A CALCULADORA CIENTIFICA!\n\n");
-    printf("DIGITE UM NUMERO PARA SELECIONAR A OPERACAO DESEJADA\n\n 1- ADICAO\n 2- SUBTRACAO\n 3- MULTIPLICACAO\n 4- DIVISAO\n 5- POTENCIACAO\n 6- RAIZ QUADRADA\n 7- SENO\n 8- COSSENO\n 9- TANGENTE\n 10- LOGARITMO NA BASE 10\n 11- LOGARITMO NEPERIANO - Ln\n 12- EXPONENCIAL - E^X\n 13- CALCULO DO IMC\n 14- AREA DO CIRCULO 15- CONVERSAO DE MIN PRA HORAS\n 16- CONVERSAO DE MIN PRA HORAS\n 17- KM PRA METROS\n 18-METROS PRA KM\n 19-GRAUS EM RADIANOS\n 20- RADIANOS PARA GRAUS\n 21- CELSIUS PARA FAHRENHEIT\n 22- FAHRENHEIT PARA CELSIUS\n 23- CELSIUS PARA KELVIN\n 24- KELVIN PARA CELSIUS\n 25- FAHRENHEIT PARA KELVIN\n 26- KELVIN PARA FAHRENHEIT\n 27- AREA DO QUADRADO\n");
+    printf("DIGITE UM NUMERO PARA SELECIONAR A OPERACAO DESEJADA\n\n 1- ADICAO\n 2- SUBTRACAO\n 3- MULTIPLICACAO\n 4- DIVISAO\n 5- POTENCIACAO\n 6- RAIZ QUADRADA\n 7- SENO\n 8- COSSENO\n 9- TANGENTE\n 10- LOGARITMO NA BASE 10\n 11- LOGARITMO NEPERIANO - Ln\n 12- EXPONENCIAL - E^X\n 13- CALCULO DO IMC\n 14- AREA DO CIRCULO\n 15- CONVERSAO DE MIN PRA HORAS\n 16- CONVERSAO DE HORAS PRA MIN\n 17- CONVERSAO DE KM PRA METROS\n 18- CONVERSAO DE METROS PRA KM\n 19- CONVERSAO DE GRAUS EM RADIANOS\n 20- CONVERSAO DE RADIANOS PARA GRAUS\n 21- CONVERSAO DE CELSIUS PARA FAHRENHEIT\n 22- CONVERSAO DE FAHRENHEIT PARA CELSIUS\n 23- CONVERSAO DE CELSIUS PARA KELVIN\n 24- CONVERSAO DE KELVIN PARA CELSIUS\n 25- CONVERSAO DE FAHRENHEIT PARA KELVIN\n 26- CONVERSAO DE KELVIN PARA FAHRENHEIT\n 27- CALCULO DA AREA DO QUADRADO\n 28- PERCENTUAL DE UM NUMERO\n 29- AUMENTO PERCENTUAL\n 30- DESCONTO PERCENTUAL\n 31- MEDIA ARITMETICA\n");
     scanf(" %d", &op);
 
     switch(op){
@@ -78,10 +78,10 @@
         if(numero1>=0) {
         resultado = sqrt(numero1);
     printf("RESULTADO:%.2lf\n",resultado);
-            }
+    }
         else{
     printf("ERRO: RAIZ DE NUMERO NEGATIVO!\n");
-        }
+    }
         break;
     }
         
@@ -121,10 +121,10 @@
         {
         resultado = log10(numero1);
     printf("O LOG DE BASE 10 É: %.2lf ",resultado);
-        }
+    }
         else{
     printf("ERRO: LOGARITMO INEXISTENTE - NUMERO NAO POSITIVO!\n");
-        }
+    }
         break;
         
         case 11:
@@ -134,10 +134,10 @@
         {
         resultado = log(numero1);
     printf("O LOG É: %.2lf\n",resultado);
-        }
+    }
         else{
     printf("ERRO: LOGARITMO INEXISTENTE - NUMERO NAO POSITIVO!\n");
-        }
+    }
         break;
         
         case 12:{
@@ -145,7 +145,7 @@
     scanf("%lf",&numero1);    
         resultado = exp(numero1);
     printf("RESULTADO: %.2lf",resultado);  
- }  
+    }  
     break;
     
         case 13:{
@@ -160,7 +160,7 @@
         printf("ERRO: ALTURA INVALIDA!\n");
     }
     break;
-}
+    }
 
         case 14:{
     printf("DIGITE O RAIO DO CIRCULO:\n");
@@ -177,7 +177,7 @@
         resultado = numero1 / 60;
     printf("%.2lf MINUTOS SAO EQUIVALENTES A %.2lf HORAS\n", numero1, resultado);    
     break;
-        }
+    }
         
         case 16:{
     printf("DIGITE O NUMERO EM HORAS:\n");
@@ -185,7 +185,7 @@
         resultado = numero1 * 60;
     printf("%.2lf HORAS SAO EQUIVALENTES A %.2lf MINUTOS\n", numero1, resultado);    
     break;
-        }
+    }
 
         case 17:{
     printf("DIGITE O NUMERO EM KM:\n");
@@ -225,15 +225,15 @@
         resultado = (numero1 * 1.8) + 32;
     printf("%lf CELSIUS SAO %lf FAHRENHEIT\n",numero1, resultado);
     break;
-        }
+    }
         
         case 22:{
     printf("DIGITE O NUMERO EM FAHRENHEIT\n");
     scanf("%lf",&numero1);
-        resultado = (numero1 - 32) * 1/1.8;
+        resultado = (numero1 - 32) * (1.0/1.8);
     printf("%.2lf FAHRENHEIT SAO %.2lf CELSIUS\n",numero1, resultado);
     break;
-        }
+    }
         
         case 23:{
     printf("DIGITE O NUMERO EM CELSIUS\n");
@@ -241,7 +241,7 @@
         resultado = numero1 + 273;
     printf("%.2lf CELSIUS SAO %.2lf KELVIN\n",numero1, resultado);
     break;
-        }
+    }
         
         case 24:{
     printf("DIGITE O NUMERO EM KELVIN\n");
@@ -249,7 +249,7 @@
         resultado = numero1 - 273;
     printf("%.2lf KELVIN SAO %.2lf CELSIUS\n",numero1, resultado);
     break;
-        }
+    }
         
         case 25:{
     printf("DIGITE O NUMERO EM FAHRENHEIT\n");
@@ -257,7 +257,7 @@
         resultado = (numero1-32) * 5/9 + 273;
     printf("%.2lf FAHRENHEIT SAO %.2lf KELVIN\n",numero1, resultado);
     break;
-        }
+    }
         
         case 26:{
     printf("DIGITE O NUMERO EM KELVIN\n");
@@ -265,7 +265,7 @@
         resultado = (numero1-273) * 1.8 + 32;
     printf("%.2lf KELVIN SAO %.2lf FAHRENHEIT\n",numero1, resultado);
     break;
-        }
+    }
         
         case 27:{
     printf("DIGITE O NUMERO EM CM OU M:\n");
@@ -274,7 +274,56 @@
     printf("A AREA DO QUADRADO DE LADO %.2lf E %.2lf",numero1, resultado);
     break;
     }
+    
+        case 28:{
+    printf("DIGITE O PRIMEIRO NUMERO:\n");
+    scanf("%lf", &numero1);
+    printf("DIGITE O SEGUNDO NUMERO:\n");
+    scanf("%lf", &numero2);
+        resultado = (numero1 * numero2) / 100;
+    printf("O PERCENTUAL DE %.2lf DE %.2lf E: %.2lf\n", numero1, numero2, resultado);
+    break;
+    }
+
+        case 29:{
+    printf("DIGITE O PRIMEIRO NUMERO:\n");
+    scanf("%lf", &numero1);
+    printf("DIGITE O SEGUNDO NUMERO (PERCENTUAL):\n");
+    scanf("%lf", &numero2);
+        resultado = numero1 + (numero1 * numero2 / 100);
+    printf("O AUMENTO DE %.2lf POR %.2lf%% E: %.2lf\n", numero1, numero2, resultado);
+    break;
+    }
+    
+        case 30:{
+    printf("DIGITE O PRIMEIRO NUMERO:\n");
+    scanf("%lf", &numero1);
+    printf("DIGITE O SEGUNDO NUMERO (PERCENTUAL):\n");
+    scanf("%lf", &numero2);
+        resultado = numero1 - (numero1 * numero2 / 100);
+    printf("O DESCONTO DE %.2lf POR %.2lf%% E: %.2lf\n", numero1, numero2, resultado);
+    break;
+    }
         
+        case 31:{
+    printf("DIGITE O PRIMEIRO NUMERO:\n");
+    scanf("%lf", &numero1);
+    printf("DIGITE O SEGUNDO NUMERO:\n");
+    scanf("%lf", &numero2);
+    printf("DIGITE O TERCEIRO NUMERO:\n");
+    scanf("%lf", &numero3);
+    printf("DIGITE O QUARTO NUMERO:\n");
+    scanf("%lf", &numero4);
+    printf("DIGITE O QUINTO NUMERO:\n");
+    scanf("%lf", &numero5);
+
+        resultado = (numero1 + numero2 + numero3 + numero4 + numero5) / 5;
+
+    printf("A MEDIA ARITMETICA ENTRE %.2lf, %.2lf, %.2lf, %.2lf, %.2lf E: %.2lf\n", 
+            numero1, numero2, numero3, numero4, numero5, resultado);
+    break;
+}
+    
         default:
     printf("O NUMERO ESCOLHIDO E INVALIDO.\n TENTE NOVAMENTE!\n");
         break;
@@ -287,3 +336,9 @@
         
 }
 
+
+    
+    
+    
+    
+    
