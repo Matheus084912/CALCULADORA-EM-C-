@@ -90,7 +90,7 @@
     printf("DIGITE O ANGULO EM GRAUS:\n");
     scanf("%lf",&numero1);
         resultado = sin(numero1*M_PI/180);
-    printf("O SENO É: %.2lf\n",resultado);        
+    printf("O SENO E: %.2lf\n",resultado);
         break;
     }
         
@@ -99,7 +99,7 @@
     printf("DIGITE O ANGULO EM GRAUS:\n");
     scanf("%lf",&numero1);
         resultado = cos(numero1*M_PI/180);
-    printf("O COSSENO É: %.2lf\n",resultado);        
+    printf("O COSSENO E: %.2lf\n",resultado);        
         break;
     }
         
@@ -120,7 +120,7 @@
         if(numero1>0)
         {
         resultado = log10(numero1);
-    printf("O LOG DE BASE 10 É: %.2lf ",resultado);
+    printf("O LOG DE BASE 10 E: %.2lf ",resultado);
     }
         else{
     printf("ERRO: LOGARITMO INEXISTENTE - NUMERO NAO POSITIVO!\n");
