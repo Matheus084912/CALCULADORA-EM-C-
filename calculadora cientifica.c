@@ -5,12 +5,12 @@
 
 
 
-int main() {
+    int main() {
     double numero1, numero2, resultado;
     int op; 
     
     printf("BEM VINDOS A CALCULADORA CIENTIFICA!\n\n");
-    printf("DIGITE UM NUMERO PARA SELECIONAR A OPERACAO DESEJADA\n\n 1- ADICAO\n 2- SUBTRACAO\n 3- MULTIPLICACAO\n 4- DIVISAO\n 5- POTENCIACAO\n 6- RAIZ QUADRADA\n 7- SENO\n 8- COSSENO\n 9- TANGENTE\n 10- LOGARITMO NA BASE 10\n 11- LOGARITMO NEPERIANO - Ln\n 12- EXPONENCIAL - E^X\n");
+    printf("DIGITE UM NUMERO PARA SELECIONAR A OPERACAO DESEJADA\n\n 1- ADICAO\n 2- SUBTRACAO\n 3- MULTIPLICACAO\n 4- DIVISAO\n 5- POTENCIACAO\n 6- RAIZ QUADRADA\n 7- SENO\n 8- COSSENO\n 9- TANGENTE\n 10- LOGARITMO NA BASE 10\n 11- LOGARITMO NEPERIANO - Ln\n 12- EXPONENCIAL - E^X\n 13- CALCULO DO IMC\n 14- AREA DO CIRCULO 15- CONVERSAO DE MIN PRA HORAS\n 16- CONVERSAO DE MIN PRA HORAS\n 17- KM PRA METROS\n 18-METROS PRA KM\n 19-GRAUS EM RADIANOS\n 20- RADIANOS PARA GRAUS\n 21- CELSIUS PARA FAHRENHEIT\n 22- FAHRENHEIT PARA CELSIUS\n 23- CELSIUS PARA KELVIN\n 24- KELVIN PARA CELSIUS\n 25- FAHRENHEIT PARA KELVIN\n 26- KELVIN PARA FAHRENHEIT\n 27- AREA DO QUADRADO\n");
     scanf(" %d", &op);
 
     switch(op){
@@ -147,11 +147,141 @@ int main() {
     printf("RESULTADO: %.2lf",resultado);  
  }  
     break;
+    
+        case 13:{
+    printf("DIGITE O PESO (em KG):\n");
+    scanf("%lf",&numero1);  
+    printf("DIGITE A ALTURA (em METROS):\n");
+    scanf("%lf",&numero2);  
+    if (numero2 > 0) {
+        resultado = numero1 / (numero2 * numero2);  
+        printf("SEU IMC E %.2lf\n", resultado);
+    } else {
+        printf("ERRO: ALTURA INVALIDA!\n");
+    }
+    break;
+}
+
+        case 14:{
+    printf("DIGITE O RAIO DO CIRCULO:\n");
+    scanf("%lf", &numero1);
+        resultado = M_PI * numero1 * numero1;
+    printf("A AREA DO CIRCULO COM RAIO %.2lf E: %.4lf\n", numero1, resultado); 
+    break;
+    }
+    
+    
+        case 15:{
+    printf("DIGITE O NUMERO EM MINUTOS:\n");
+    scanf("%lf", &numero1);
+        resultado = numero1 / 60;
+    printf("%.2lf MINUTOS SAO EQUIVALENTES A %.2lf HORAS\n", numero1, resultado);    
+    break;
+        }
+        
+        case 16:{
+    printf("DIGITE O NUMERO EM HORAS:\n");
+    scanf("%lf", &numero1);
+        resultado = numero1 * 60;
+    printf("%.2lf HORAS SAO EQUIVALENTES A %.2lf MINUTOS\n", numero1, resultado);    
+    break;
+        }
+
+        case 17:{
+    printf("DIGITE O NUMERO EM KM:\n");
+    scanf("%lf",&numero1);
+        resultado = numero1 * 1000;
+    printf("%.2lf KM SAO %.2lf METROS\n",numero1, resultado);
+    break;
+    }
+        
+        case 18:{
+    printf("DIGITE O NUMERO EM METROS:\n");
+    scanf("%lf",&numero1);
+        resultado = numero1 / 1000;
+    printf("%.2lf METROS SAO %.2lf KM\n",numero1, resultado);
+    break;
+    }
+
+        case 19:{
+    printf("DIGITE O NUMERO EM GRAUS:\n");
+    scanf("%lf",&numero1);
+        resultado = numero1 * (M_PI/180);
+    printf("%.2lf GRAUS SAO %.2lf RAD\n",numero1, resultado);
+    break;
+    }
+    
+        case 20:{
+    printf("DIGITE O NUMERO EM RADIANOS:\n");
+    scanf("%lf",&numero1);
+        resultado = numero1 * (180/M_PI);
+    printf("%.2lf RAD SAO %.2lf GRAUS\n",numero1, resultado);
+    break;
+    }
+    
+        case 21:{
+    printf("DIGITE O NUMERO EM CELSIUS\n");
+    scanf("%lf",&numero1);
+        resultado = (numero1 * 1.8) + 32;
+    printf("%lf CELSIUS SAO %lf FAHRENHEIT\n",numero1, resultado);
+    break;
+        }
+        
+        case 22:{
+    printf("DIGITE O NUMERO EM FAHRENHEIT\n");
+    scanf("%lf",&numero1);
+        resultado = (numero1 - 32) * 1/1.8;
+    printf("%.2lf FAHRENHEIT SAO %.2lf CELSIUS\n",numero1, resultado);
+    break;
+        }
+        
+        case 23:{
+    printf("DIGITE O NUMERO EM CELSIUS\n");
+    scanf("%lf",&numero1);
+        resultado = numero1 + 273;
+    printf("%.2lf CELSIUS SAO %.2lf KELVIN\n",numero1, resultado);
+    break;
+        }
+        
+        case 24:{
+    printf("DIGITE O NUMERO EM KELVIN\n");
+    scanf("%lf",&numero1);
+        resultado = numero1 - 273;
+    printf("%.2lf KELVIN SAO %.2lf CELSIUS\n",numero1, resultado);
+    break;
+        }
+        
+        case 25:{
+    printf("DIGITE O NUMERO EM FAHRENHEIT\n");
+    scanf("%lf",&numero1);
+        resultado = (numero1-32) * 5/9 + 273;
+    printf("%.2lf FAHRENHEIT SAO %.2lf KELVIN\n",numero1, resultado);
+    break;
+        }
+        
+        case 26:{
+    printf("DIGITE O NUMERO EM KELVIN\n");
+    scanf("%lf",&numero1);
+        resultado = (numero1-273) * 1.8 + 32;
+    printf("%.2lf KELVIN SAO %.2lf FAHRENHEIT\n",numero1, resultado);
+    break;
+        }
+        
+        case 27:{
+    printf("DIGITE O NUMERO EM CM OU M:\n");
+    scanf("%lf",&numero1);
+        resultado = (numero1 * numero1);
+    printf("A AREA DO QUADRADO DE LADO %.2lf E %.2lf",numero1, resultado);
+    break;
+    }
         
         default:
     printf("O NUMERO ESCOLHIDO E INVALIDO.\n TENTE NOVAMENTE!\n");
         break;
     }        
+    
+    
+    
 
     return 0;
         
