@@ -166,7 +166,7 @@
     printf("DIGITE O RAIO DO CIRCULO:\n");
     scanf("%lf", &numero1);
         resultado = M_PI * numero1 * numero1;
-    printf("A AREA DO CIRCULO COM RAIO %.2lf E: %.4lf\n", numero1, resultado); 
+    printf("A AREA DO CIRCULO COM RAIO %.2lf E: %.2lf\n", numero1, resultado); 
     break;
     }
     
@@ -223,7 +223,7 @@
     printf("DIGITE O NUMERO EM CELSIUS\n");
     scanf("%lf",&numero1);
         resultado = (numero1 * 1.8) + 32;
-    printf("%lf CELSIUS SAO %lf FAHRENHEIT\n",numero1, resultado);
+    printf("%.2lf CELSIUS SAO %.2lf FAHRENHEIT\n",numero1, resultado);
     break;
     }
         
