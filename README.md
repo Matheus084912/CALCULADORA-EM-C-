@@ -38,7 +38,7 @@ Este projeto é uma calculadora científica na linguagem C que suporta 36 funç�
 ## Como usar este projeto?
 
 ### 1. Download
-Baixe o arquivo `calculadora cientifica.c` deste repositório.
+Baixe o arquivo `calculadoracomfuncoes.c` deste repositório.
 
 ### 2. Abrir na IDE ou ONLINE (GDB)
 - Abra o arquivo no Dev-C++, Code::Blocks, Visual Studio ou sua IDE de preferência
@@ -70,5 +70,6 @@ O código possui tratamento para erros.
 1-Divisão por zero  
 2-Raiz de número negativo  
 3-Logaritmo de número não positivo
+
 
 
