@@ -1,6 +1,6 @@
 <h1 align="center"> CALCULADORA CIENTÍFICA</h1>
 
-Este projeto é uma calculadora científica na linguagem C que suporta 31 operações matemáticas diferentes. O usuário pode acessar o menu interativo para escolher a operação desejada.
+Este projeto é uma calculadora científica na linguagem C que suporta 36 funções, divididas em 33 funções matemáticas e funções de saída da calculadora, mostrar e limpar histórico. O usuário pode acessar o menu interativo para escolher a operação desejada.
 
 ## Tecnologias e Recursos Utilizados
 
@@ -24,7 +24,7 @@ Este projeto é uma calculadora científica na linguagem C que suporta 31 opera�
 
 **Estruturas de controle:**
 - `do-while` — loop principal da calculadora
-- `switch-case` — seleção de operações (31 cases)
+- `switch-case` — seleção de operações (36 cases)
 - `if-else` — validação de entrada e tratamento de erros
 
 **Tratamento de erros:**
@@ -63,10 +63,11 @@ Baixe o arquivo `calculadora cientifica.c` deste repositório.
 ### Informações adicionais:
 
 O programa utiliza um loop do-while, permitindo que o usuário realize várias operações sem reiniciar.
-Para sair da calculadora, basta escolher a opção 32 (sair) ou responder "n" quando perguntado ao final de uma operação se deseja continuar.
+Para sair da calculadora, basta escolher a opção 0 (sair) ou responder "n" quando perguntado ao final de uma operação se deseja continuar.
 
 O código possui tratamento para erros.  
 ***Exemplos:***  
 1-Divisão por zero  
 2-Raiz de número negativo  
 3-Logaritmo de número não positivo
+
