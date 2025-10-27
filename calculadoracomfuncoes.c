@@ -899,7 +899,7 @@ int main()
     {
         // exibicao do menu interativo
         printf("\n\n-- Bem Vindos a Calculadora Cientifica! --\n\n");
-        printf("\n-- 31 operacoes --\n");
+        printf("\n-- 36 Funcoes --\n");
 
         printf("\n\n Operacoes Basicas\n\n");
         printf("1 - adicao\n2 - subtracao\n3 - multiplicacao\n4 - divisao\n5 - potenciacao\n6 - raiz quadrada\n");
