@@ -1,4 +1,4 @@
-<h1 align="center"> CALCULADORA CIENTÍFICA -  ATUALIZADA COM FUNÇÕES - 2.0</h1>
+<h1 align="center"> CALCULADORA CIENTÍFICA - VERSAO 2.0</h1>
 
 Este projeto é uma calculadora científica na linguagem C que suporta 36 funções, divididas em 33 funções matemáticas e funções de saída da calculadora, mostrar e limpar histórico. O usuário pode acessar o menu interativo para escolher a operação desejada.
 
@@ -70,6 +70,7 @@ O código possui tratamento para erros.
 1-Divisão por zero  
 2-Raiz de número negativo  
 3-Logaritmo de número não positivo
+
 
 
 
