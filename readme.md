@@ -40,7 +40,6 @@ Além disso, realiza um **benchmark automático** com vetores aleatórios de dif
 
 - O programa só aceita RGMs de 8 dígitos. Entradas inválidas são rejeitadas.
 - Os vetores do benchmark são gerados aleatoriamente.
-- O CSV gerado pode ser importado para Excel, LibreOffice ou usado em scripts Python para análise de desempenho.
 
 ---
 
@@ -84,4 +83,5 @@ Bubble,10000,49995000,49995000,24997500,1550.678
 3. **Compilar e Executar**  
 
 ```bash
+
 gcc ordenacao.c -o 
