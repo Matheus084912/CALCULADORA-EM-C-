@@ -15,7 +15,7 @@ Além disso, realiza um **benchmark automático** com vetores aleatórios de dif
 - `<stdlib.h>` — Funções de alocação dinâmica e `rand()`
 - `<string.h>` — Manipulação de strings
 - `<time.h>` — Medição de tempo de execução
-- `<ctype.h>` - Para o struct typedef
+- `<ctype.h>` - Usado para funções de manipulação e verificação de caracteres
 
 **Funções principais:**
 
@@ -86,5 +86,6 @@ Bubble,10000,49995000,49995000,24997500,1550.678
 ```bash
 
 gcc ordenacao.c -o 
+
 
 
